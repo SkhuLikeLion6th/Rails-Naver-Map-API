@@ -6,4 +6,9 @@ class MapsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get mapping" do
+    get maps_mapping_url
+    assert_response :success
+  end
+
 end
